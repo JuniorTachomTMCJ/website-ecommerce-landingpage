@@ -1,6 +1,6 @@
 # integration-wiroo-ecommerce
 
-Integration of a model designed by Johan Gaby.
+Integration of a model designed by [Johan Gaby](https://www.behance.net/mbagnajohan).
 
 ## Table of contents
 
