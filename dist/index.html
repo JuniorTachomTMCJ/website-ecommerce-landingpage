@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiroo E-commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+
+<body>
+
+
+
+    <!-- Start Loader -->
+    <p
+        class="loader transition-opacity container fixed left-0 right-0 top-2/4 -translate-y-2/4 text-3xl font-bold z-[2000] text-center text-white">
+        Chargement...
+    </p>
+    <!-- End Loader -->
+
+    <!-- Start header section -->
+    <header>
+        <!-- start news bar -->
+        <div class="bg-gray-100 py-2">
+            <div class="container">
+                <div class="flex flex-wrap justify-center text-center gap-x-2 text-[.8125rem]">
+                    <p>Vous êtes étudiants ? Bénéficié de 10 % de réduction.</p>
+                    <a href="#" class="opacity-[0.45]">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <!-- end news bar -->
+
+        <div>
+            <div class="container">
+                <!-- start statut -->
+                <div class="text-xs flex items-center justify-center sm:justify-end gap-x-3 pt-3">
+                    <p>statut de la commande</p>
+                    <p class="flex flex-nowrap items-center"><img src="./assets/icons/position.svg" alt="" class="mr-1">
+                        adresse
+                        de
+                        la livraison
+                    </p>
+                </div>
+                <!-- end statut -->
+
+                <div class="flex items-center mt-4 gap-x-8">
+                    <a href="#" class=""><img src="./assets/logo.svg" alt="logo"></a>
+                    <div class="flex-1 flex items-center justify-end md:justify-between relative">
+                        <!-- start nav -->
+                        <input type="checkbox" name="" id="menu" class="hidden peer">
+                        <nav
+                            class="fixed z-50 right-[-200%] top-0 h-screen md:h-full w-80 md:w-full bg-white md:bg-inherit shadow-2xl md:shadow-none md:static flex flex-col md:flex-row items-start md:items-center gap-3 text-[#27272As] p-5 md:p-0 peer-checked:right-0 transition-all duration-500">
+
+                            <label for="menu"
+                                class="text-right w-full cursor-pointer block md:hidden text-2xl transition duration-300 hover:text-red-600">
+                                <span>&times;</span></label>
+
+                            <div class="group">
+                                <a href="#" class="flex relative items-baseline flex-nowrap  ">Nos Produits
+                                    <img src="./assets/icons/down.svg" alt="" class="ml-2">
+                                </a>
+
+                                <div
+                                    class="absolute flex flex-col top-[125%]  group-hover:top-full left-0 bg-white  py-5 rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-500 ">
+                                    <a href="#" class="px-5 py-2 hover:bg-gray-100">Composants electronique
+                                    </a>
+                                    <a href="#" class="px-5 py-2 hover:bg-gray-100">Equipement audiovisuels
+                                    </a>
+                                    <a href="#" class="px-5 py-2 hover:bg-gray-100">Ordinateurs
+                                    </a>
+                                    <a href="#" class="px-5 py-2 hover:bg-gray-100">Meubles</a>
+                                    <a href="#" class="px-5 py-2 hover:bg-gray-100">Téléphones</a>
+                                </div>
+                            </div>
+
+
+                            <a href="#" class="relative group">Promos</a>
+                            <a href="#">Centre d’aide</a>
+                        </nav>
+                        <!-- end nav -->
+
+                        <div>
+                            <!-- start search bar -->
+                            <label for="search">
+                                <img src="./assets/icons/search.svg" alt="" class="cursor-pointer block lg:hidden ">
+                            </label>
+                            <input type="checkbox" name="" id="search" class="hidden peer">
+
+                            <div
+                                class="border border-gray-200 rounded absolute z-40 lg:static  flex items-center px-5 py-2 lg:p-[.625rem] peer-checked:flex  right-0 top-[150%] origin-top scale-y-0 lg:scale-y-100 bg-white lg:bg-inherit peer-checked:scale-y-100 transition-transform">
+                                <input type="search" name="" id="" class="outline-none bg-transparent "
+                                    placeholder="Rechercher">
+                                <img src="./assets/icons/search.svg" alt="" class="cursor-pointer mr-3">
+                            </div>
+                            <!-- end search bar -->
+                        </div>
+
+                    </div>
+
+                    <!-- start icons -->
+                    <div class="flex items-center gap-x-4">
+                        <img src="./assets/icons/user.svg" alt="Profile" class="cursor-pointer">
+                        <img src="./assets/icons/heart.svg" alt="Favoris" class="cursor-pointer">
+                        <img src="./assets/icons/shop.svg" alt="Shop" class="cursor-pointer">
+                        <label for="menu" class="cursor-pointer inline-block md:hidden">
+                            <img src="./assets/icons/menu_filled.svg" width="16px" alt="Menu">
+                        </label>
+                    </div>
+                    <!-- end icons -->
+                </div>
+
+
+            </div>
+        </div>
+
+    </header>
+    <!-- End header section -->
+
+    <!-- Start hero section -->
+    <section class="bg-center bg-cover bg-no-repeat" style="background-image: url('./assets/images/hero.jpg');">
+        <div class="container min-h-screen flex flex-col  mt-3">
+            <div
+                class="text-white text-center flex flex-col justify-center flex-1 md:text-left animate__animated animate__fadeInLeft">
+                <h1 class="font-medium text-5xl">Série Xiaomi 12</h1>
+                <p class="text-lg">Paiement disponible en plusieurs tranches, inscrivez-vous pour en profiter.</p>
+
+                <!-- start cta -->
+                <div class=" flex flex-wrap justify-center md:justify-start gap-3 mt-5">
+                    <a href="#" class="btn">Payer en plusieurs tranches <img src="./assets/icons/right.svg" alt=""
+                            class="ml-3"></a>
+                    <a href="#" class="btn bg-transparent border-white px-14">Acheter <img
+                            src="./assets/icons/right.svg" alt="" class="ml-3 "></a>
+                </div>
+                <!-- end cta -->
+            </div>
+
+            <!-- start controls -->
+            <div class="mb-11 flex justify-between items-center animate__animated animate__fadeInUp">
+                <div class="flex items-center gap-x-1">
+                    <div class="flex items-center">
+                        <input type="radio" name="slider" id="slider-1" class="hidden peer" checked>
+                        <label for="slider-1"
+                            class="h-[.125rem] w-5 bg-white rounded-sm cursor-pointer opacity-40 peer-checked:w-20 peer-checked:bg-black peer-checked:opacity-100 transition-all"></label>
+
+                    </div>
+                    <div class="flex items-center">
+                        <input type="radio" name="slider" id="slider-2" class="hidden peer">
+                        <label for="slider-2"
+                            class="h-[.125rem] w-5 bg-white rounded-sm cursor-pointer opacity-40 peer-checked:w-20 peer-checked:bg-black peer-checked:opacity-100 transition-all"></label>
+
+                    </div>
+                    <div class="flex items-center">
+                        <input type="radio" name="slider" id="slider-3" class="hidden peer">
+                        <label for="slider-3"
+                            class="h-[.125rem] w-5 bg-white rounded-sm cursor-pointer opacity-40 peer-checked:w-20 peer-checked:bg-black peer-checked:opacity-100 transition-all"></label>
+
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center cursor-pointer">
+                        <img src="./assets/icons/left.svg" alt="">
+                    </div>
+                    <div
+                        class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center rotate-180 cursor-pointer">
+                        <img src="./assets/icons/left.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- end controls -->
+        </div>
+    </section>
+    <!-- End hero section -->
+
+    <!-- start news section -->
+    <section class=" py-[3.75rem] news">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <h2 class="uppercase font-bold text-2xl">NOS NOUVEAUTES</h2>
+
+                <div class="flex items-center gap-x-3">
+                    <button class="btn rotate-180 ">
+                        <img src="./assets/icons/right-1.svg" alt="">
+                    </button>
+
+                    <button class="btn bg-transparent border-black">
+                        <img src="./assets/icons/left-1.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- start grid news -->
+            <div class="grid grid-cols-12 gap-3 mt-3">
+                <!-- start single new -->
+                <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 new-item opacity-0">
+                    <div class="relative overflow-hidden h-[19.4375rem] rounded">
+                        <img src="./assets/images/product-1.jpg" alt="product-1"
+                            class="w-full sm:w-auto h-full object-cover rounded ">
+                        <p class="bg-black text-white font-medium text-sm absolute bottom-0 left-0 p-[.625rem] rounded">
+                            1 344
+                            000 FCFA</p>
+                    </div>
+
+                    <div class="flex gap-2 justify-between mt-2">
+                        <div class="h-14 rounded flex-1">
+                            <img src="./assets/images/product-1-1.jpg" alt="product-1-1"
+                                class="h-full w-full object-cover rounded">
+                        </div>
+
+                        <div class="h-14 rounded flex-1">
+                            <img src="./assets/images/product-1-2.jpg" alt="product-1-2"
+                                class="h-full w-full object-cover rounded">
+                        </div>
+
+                        <div class="h-14 rounded flex-1">
+                            <img src="./assets/images/product-1-3.jpg" alt="product-1-3"
+                                class="h-full w-full object-cover rounded">
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <p class="text-sm flex items-center">
+                            <img src="./assets/icons/heart.svg" alt="" class="mr-1">4.7(20 en stock)
+                        </p>
+                        <h6 class="mt-1 font-medium">Samsung 49" QLED - C49RG90SSR</h6>
+                    </div>
+
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <button class="btn bg-[#3366CC] ">Acheter <img src="./assets/icons/right.svg" alt=""
+                                class="ml-3"></button>
+                        <button class="btn bg-transparent text-black border-black/40">Acheter </button>
+                    </div>
+                </div>
+                <!-- end single new -->
+
+                <!-- start single new -->
+                <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 new-item opacity-0">
+                    <div class="relative overflow-hidden h-[19.4375rem] rounded">
+                        <img src="./assets/images/product-2.jpg" alt="product-2"
+                            class="w-full sm:w-auto h-full object-cover rounded ">
+                        <p class="bg-black text-white font-medium text-sm absolute bottom-0 left-0 p-[.625rem] rounded">
+                            1 344
+                            000 FCFA</p>
+                    </div>
+
+                    <div class="mt-2">
+                        <p class="text-sm flex items-center">
+                            <img src="./assets/icons/heart.svg" alt="" class="mr-1">4.7(28 en stock)
+                        </p>
+                        <h6 class="mt-1 font-medium">Motospeed K87S Clavier Mécanique</h6>
+                    </div>
+
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <button class="btn ">Acheter <img src="./assets/icons/right.svg" alt="" class="ml-3"></button>
+                        <button class="btn bg-transparent text-black border-black/40">Acheter </button>
+                    </div>
+                </div>
+                <!-- end single new -->
+
+                <!-- start single new -->
+                <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 new-item opacity-0">
+                    <div class="relative overflow-hidden h-[19.4375rem] rounded">
+                        <img src="./assets/images/product-3.jpg" alt="product-3"
+                            class="w-full sm:w-auto h-full object-cover rounded ">
+                        <p class="bg-black text-white font-medium text-sm absolute bottom-0 left-0 p-[.625rem] rounded">
+                            1 344
+                            000 FCFA</p>
+                    </div>
+
+                    <div class="mt-2">
+                        <p class="text-sm flex items-center">
+                            <img src="./assets/icons/heart.svg" alt="" class="mr-1">4.7(05 en stock)
+                        </p>
+                        <h6 class="mt-1 font-medium">Oculus Quest 2 128 Go</h6>
+                    </div>
+
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <button class="btn ">Acheter <img src="./assets/icons/right.svg" alt="" class="ml-3"></button>
+                        <button class="btn bg-transparent text-black border-black/40">Acheter </button>
+                    </div>
+                </div>
+                <!-- end single new -->
+
+                <!-- start single new -->
+                <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 new-item opacity-0">
+                    <div class="relative overflow-hidden h-[19.4375rem] rounded">
+                        <img src="./assets/images/product-4.jpg" alt="product-4"
+                            class="w-full sm:w-auto h-full object-cover rounded ">
+                        <p class="bg-black text-white font-medium text-sm absolute bottom-0 left-0 p-[.625rem] rounded">
+                            1 344
+                            000 FCFA</p>
+                    </div>
+
+                    <div class="mt-2">
+                        <p class="text-sm flex items-center">
+                            <img src="./assets/icons/heart.svg" alt="" class="mr-1">4.7(32 en stock)
+                        </p>
+                        <h6 class="mt-1 font-medium">Tapis LED Gamer Clavier Souris </h6>
+                    </div>
+
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <button class="btn ">Acheter <img src="./assets/icons/right.svg" alt="" class="ml-3"></button>
+                        <button class="btn bg-transparent text-black border-black/40">Acheter </button>
+                    </div>
+                </div>
+                <!-- end single new -->
+            </div>
+            <!-- end grid news -->
+        </div>
+    </section>
+    <!-- end news section -->
+
+    <!-- start cible section -->
+    <section class="bg-[#F9FAFB] py-[3.75rem]">
+        <div class="container">
+            <h2 class="uppercase font-bold text-2xl">NOS NOUVEAUTES</h2>
+
+            <!-- start grid cible -->
+            <div class="grid grid-cols-12 gap-3 mt-3">
+                <!-- start single cible -->
+                <div class="col-span-12 sm:col-span-6 md:col-span-4 cible-item opacity-0 ">
+                    <div class="relative overflow-hidden h-[25rem] rounded group">
+                        <img src="./assets/images/main.jpg" alt="main"
+                            class="w-full sm:w-auto h-full object-cover rounded ">
+                        <p
+                            class="uppercase text-white font-semibold text-xl absolute bottom-0 left-0 right-0 text-center p-[1.25rem] rounded z-10 after:absolute after:inset-0 after:scale-y-0 group-hover:after:scale-y-100 after:origin-bottom after:bg-black after:-z-10 after:transition after:rounded-3xl after:rounded-bl-none after:rounded-br-none">
+                            hommes</p>
+                    </div>
+                </div>
+                <!-- end single cible -->
+
+                <!-- start single cible -->
+                <div class="col-span-12 sm:col-span-6 md:col-span-4 cible-item opacity-0 ">
+                    <div class="relative overflow-hidden h-[25rem] rounded group">
+                        <img src="./assets/images/woman.jpg" alt="main"
+                            class="w-full sm:w-auto h-full object-cover rounded ">
+                        <p
+                            class="uppercase text-white font-semibold text-xl absolute bottom-0 left-0 right-0 text-center p-[1.25rem] rounded z-10 after:absolute after:inset-0 after:scale-y-0 group-hover:after:scale-y-100 after:origin-bottom after:bg-black after:-z-10 after:transition after:rounded-3xl after:rounded-bl-none after:rounded-br-none">
+                            femmes</p>
+                    </div>
+                </div>
+                <!-- end single cible -->
+
+                <!-- start single cible -->
+                <div class="col-span-12 sm:col-span-6 md:col-span-4 cible-item opacity-0 ">
+                    <div class="relative overflow-hidden h-[25rem] rounded group">
+                        <img src="./assets/images/child.jpg" alt="main"
+                            class="w-full sm:w-auto h-full object-cover rounded ">
+                        <p
+                            class="uppercase text-white font-semibold text-xl absolute bottom-0 left-0 right-0 text-center p-[1.25rem] rounded z-10 after:absolute after:inset-0 after:scale-y-0 group-hover:after:scale-y-100 after:origin-bottom after:bg-black after:-z-10 after:transition after:rounded-3xl after:rounded-bl-none after:rounded-br-none">
+                            enfants</p>
+                    </div>
+                </div>
+                <!-- end single cible -->
+            </div>
+            <!-- end grid cible -->
+
+        </div>
+    </section>
+    <!-- end cible section -->
+
+    <!-- start categories section -->
+    <section class="bg-[#F9FAFB] py-[3.75rem]">
+        <div class="container">
+            <h2 class="uppercase font-bold text-2xl">EXPLORER PAR CATEGORIES</h2>
+        </div>
+
+
+        <!-- start grid categories -->
+        <div class="flex flex-nowrap overflow-x-auto space-x-3 mt-3">
+            <!-- start single category -->
+            <div class="category-item opacity-0">
+                <div class="relative overflow-hidden w-[26.25rem] h-[25rem] rounded ">
+                    <img src="./assets/images/category-1.jpg" alt="main" class="w-full h-full object-cover rounded ">
+                    <p
+                        class="uppercase bg-black text-white font-medium absolute bottom-0 left-0  text-center p-3 rounded  ">
+                        Composants Electroniques</p>
+                </div>
+            </div>
+            <!-- end single category -->
+            <!-- start single category -->
+            <div class="category-item opacity-0">
+                <div class="relative overflow-hidden w-[26.25rem] h-[25rem] rounded ">
+                    <img src="./assets/images/category-2.jpg" alt="main" class="w-full h-full object-cover rounded ">
+                    <p
+                        class="uppercase bg-black text-white font-medium absolute bottom-0 left-0  text-center p-3 rounded  ">
+                        Composants Electroniques</p>
+                </div>
+            </div>
+            <!-- end single category -->
+            <!-- start single category -->
+            <div class="category-item opacity-0">
+                <div class="relative overflow-hidden w-[26.25rem] h-[25rem] rounded ">
+                    <img src="./assets/images/category-3.jpg" alt="main" class="w-full h-full object-cover rounded ">
+                    <p
+                        class="uppercase bg-black text-white font-medium absolute bottom-0 left-0  text-center p-3 rounded  ">
+                        Mobilier de bureau</p>
+                </div>
+            </div>
+            <!-- end single category -->
+            <!-- start single category -->
+            <div class="category-item opactity-0">
+                <div class="relative overflow-hidden w-[26.25rem] h-[25rem] rounded ">
+                    <img src="./assets/images/category-4.jpg" alt="main" class="w-full h-full object-cover rounded ">
+                    <p
+                        class="uppercase bg-black text-white font-medium absolute bottom-0 left-0  text-center p-3 rounded  ">
+                        Téléphones</p>
+                </div>
+            </div>
+            <!-- end single category -->
+        </div>
+        <!-- end grid categories -->
+
+
+
+    </section>
+    <!-- end categories section -->
+
+    <!-- start recomandations section -->
+    <section class=" py-[3.75rem]">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <h2 class="uppercase font-bold text-2xl">NOS NOUVEAUTES</h2>
+
+                <div class="flex items-center gap-x-3">
+                    <button class="btn rotate-180 ">
+                        <img src="./assets/icons/right-1.svg" alt="">
+                    </button>
+
+                    <button class="btn bg-transparent border-black">
+                        <img src="./assets/icons/left-1.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- start grid recomandations -->
+            <div class="grid grid-cols-12 gap-3 mt-3">
+                <!-- start single recomandation -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div class="overflow-hidden gap-x-2 flex h-[19.4375rem] rounded">
+                        <div class="flex-1">
+                            <img src="./assets/images/recomandation-1.jpg" alt="recomandation-1"
+                                class="w-full h-full object-cover rounded ">
+                        </div>
+
+
+                        <div class="flex gap-2 flex-col justify-between">
+                            <div class="w-24 flex-1 rounded">
+                                <img src="./assets/images/recomandation-1-1.jpg" alt="recomandation-1-1"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+
+                            <div class="w-24 flex-1 rounded ">
+                                <img src="./assets/images/recomandation-1-2.jpg" alt="recomandation-1-2"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+
+                            <div class="w-24 flex-1 rounded">
+                                <img src="./assets/images/recomandation-1-3.jpg" alt="recomandation-1-3"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1">
+                        <p class="text-sm flex items-center"> <span class="text-lg font-bold mr-1">1 344 000 FCFA</span>
+                            <img src="./assets/icons/heart.svg" alt="" class="mr-1">4.7(28 en stock)
+                        </p>
+                        <h6 class="mt-1 font-medium">Samsung 49" QLED - C49RG90SSR</h6>
+                        <p class="text-gray-600 text-sm leading-[1.0625rem]">Bénéficiez d'un environnement de jeu
+                            optimal avec l'écran
+                            incurvé de 49
+                            pouces Samsung
+                            C49RG90SSR ...</p>
+                    </div>
+
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <button class="btn  ">Acheter <img src="./assets/icons/right.svg" alt="" class="ml-3"></button>
+                        <button class="btn bg-transparent text-black border-black/40">Acheter </button>
+                    </div>
+                </div>
+                <!-- end single recomandation -->
+                <!-- start single recomandation -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div class="overflow-hidden gap-x-2 flex h-[19.4375rem] rounded">
+                        <div class="flex-1">
+                            <img src="./assets/images/recomandation-2.jpg" alt="recomandation-2"
+                                class="w-full h-full object-cover rounded ">
+                        </div>
+
+
+                        <div class="flex gap-2 flex-col justify-between">
+                            <div class="w-24 flex-1 rounded">
+                                <img src="./assets/images/recomandation-2-1.jpg" alt="recomandation-2-1"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+
+                            <div class="w-24 flex-1 rounded ">
+                                <img src="./assets/images/recomandation-2-2.jpg" alt="recomandation-2-2"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+
+                            <div class="w-24 flex-1 rounded">
+                                <img src="./assets/images/recomandation-2-3.jpg" alt="recomandation-2-3"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1">
+                        <p class="text-sm flex items-center"> <span class="text-lg font-bold mr-1">1 344 000 FCFA</span>
+                            <img src="./assets/icons/heart.svg" alt="" class="mr-1">4.7(28 en stock)
+                        </p>
+                        <h6 class="mt-1 font-medium">Samsung 49" QLED - C49RG90SSR</h6>
+                        <p class="text-gray-600 text-sm leading-[1.0625rem]">Bénéficiez d'un environnement de jeu
+                            optimal avec l'écran
+                            incurvé de 49
+                            pouces Samsung
+                            C49RG90SSR ...</p>
+                    </div>
+
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <button class="btn  ">Acheter <img src="./assets/icons/right.svg" alt="" class="ml-3"></button>
+                        <button class="btn bg-transparent text-black border-black/40">Acheter </button>
+                    </div>
+                </div>
+                <!-- end single recomandation -->
+                <!-- start single recomandation -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div class="overflow-hidden gap-x-2 flex h-[19.4375rem] rounded">
+                        <div class="flex-1">
+                            <img src="./assets/images/recomandation-3.jpg" alt="recomandation-3"
+                                class="w-full h-full object-cover rounded ">
+                        </div>
+
+
+                        <div class="flex gap-2 flex-col justify-between">
+                            <div class="w-24 flex-1 rounded">
+                                <img src="./assets/images/recomandation-3-1.jpg" alt="recomandation-3-1"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+
+                            <div class="w-24 flex-1 rounded ">
+                                <img src="./assets/images/recomandation-3-2.jpg" alt="recomandation-3-2"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+
+                            <div class="w-24 flex-1 rounded">
+                                <img src="./assets/images/recomandation-3-3.jpg" alt="recomandation-3-3"
+                                    class="h-full w-full object-cover rounded">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1">
+                        <p class="text-sm flex items-center"> <span class="text-lg font-bold mr-1">1 344 000 FCFA</span>
+                            <img src="./assets/icons/heart.svg" alt="" class="mr-1">4.7(28 en stock)
+                        </p>
+                        <h6 class="mt-1 font-medium">Samsung 49" QLED - C49RG90SSR</h6>
+                        <p class="text-gray-600 text-sm leading-[1.0625rem]">Bénéficiez d'un environnement de jeu
+                            optimal avec l'écran
+                            incurvé de 49
+                            pouces Samsung
+                            C49RG90SSR ...</p>
+                    </div>
+
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <button class="btn  ">Acheter <img src="./assets/icons/right.svg" alt="" class="ml-3"></button>
+                        <button class="btn bg-transparent text-black border-black/40">Acheter </button>
+                    </div>
+                </div>
+                <!-- end single recomandation -->
+
+            </div>
+            <!-- end grid recomandations -->
+        </div>
+    </section>
+    <!-- end recomandations section -->
+
+    <!-- Start newsletter section -->
+    <section class=" py-12 bg-black text-white">
+        <div class="container flex flex-col lg:flex-row flex-wrap justify-center items-center gap-6 ">
+            <p class="text-lg text-center lg:text-left leading-[1.375rem] flex-1">Nous envoyons des (très bons)
+                courriels sur les nouveaux
+                produits
+                et les promotions. Il nous arrive aussi de vous faire des listes
+                de lecture.</p>
+
+            <div class="flex-1">
+                <form action="" class="flex flex-wrap justify-center  items-center gap-2 w-full">
+                    <input type="email" name="" id="" placeholder="Votre adresse mail"
+                        class="bg-transparent border border-white/40 rounded p-3 placeholder:text-white/60 flex-1">
+                    <button type="submit" class="btn bg-white text-black ">Inscrivez-vous <img
+                            src="./assets/icons/left.svg" alt="" class="ml-3 rotate-180"></button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- start newsletter section -->
+
+    <!-- start footer section -->
+    <footer class="py-8">
+        <div class="container">
+
+            <!-- start Nav container -->
+            <div class="grid grid-cols-10 gap-x-3 gap-y-8">
+                <nav class="col-span-10 md:col-span-5 lg:col-span-2 text-gray-600 flex flex-col">
+                    <p class="font-medium text-xl text-[#161E2E] mb-4">Assistance</p>
+                    <a href="#" class="mb-2">Aide</a>
+                    <a href="#" class="mb-2">Livraison</a>
+                    <a href="#" class="mb-2">Retours et remboursements</a>
+                    <a href="#" class="mb-2">Sitemap</a>
+                    <a href="#" class="mb-2">Cartes Cadeaux</a>
+                    <a href="#" class="mb-2">Réduction étudiants</a>
+                </nav>
+                <nav class="col-span-10 md:col-span-5 lg:col-span-2 text-gray-600 flex flex-col">
+                    <p class="font-medium text-xl text-[#161E2E] mb-4">Ressources</p>
+                    <a href="#" class="mb-2">Gérer les Données</a>
+                    <a href="#" class="mb-2">Centre de traitement des
+                        données personnelles
+                    </a>
+                    <a href="#" class="mb-2">Politique de protection des
+                        données personnelles
+                    </a>
+                    <a href="#" class="mb-2">Conditions d’utilisation</a>
+                </nav>
+                <nav class="col-span-10 md:col-span-5 lg:col-span-2 text-gray-600 flex flex-col">
+                    <p class="font-medium text-xl text-[#161E2E] mb-4">Informations d’entreprises</p>
+                    <a href="#" class="mb-2">Qui sommes-nous?
+                    </a>
+                    <a href="#" class="mb-2">Emploi
+                    </a>
+                    <a href="#" class="mb-2">Presse
+                    </a>
+                    <a href="#" class="mb-2">Mobile Apps</a>
+                </nav>
+                <nav class="col-span-10 md:col-span-5 lg:col-span-2 text-gray-600 flex flex-col">
+                    <p class="font-medium text-xl text-[#161E2E] mb-4">Produits</p>
+                    <a href="#" class="mb-2">Composants electronique
+                    </a>
+                    <a href="#" class="mb-2">Equipement audiovisuels
+                    </a>
+                    <a href="#" class="mb-2">Ordinateurs
+                    </a>
+                    <a href="#" class="mb-2">Meubles</a>
+                    <a href="#" class="mb-2">Téléphones</a>
+                </nav>
+                <nav class="col-span-10 md:col-span-5 lg:col-span-2 text-gray-600 flex flex-col">
+                    <p class="font-medium text-xl text-[#161E2E] mb-4">Langues</p>
+
+                    <button class="mb-2 btn">Français <img src="./assets/icons/down.svg" alt="" class="ml-3"></button>
+
+                    <p class="font-medium text-lg text-[#161E2E] mt-3 mb-4">Lieu de livraison</p>
+                    <select name="" id="" class="outline-none border border-dashed border-gray-200 rounded p-3 ">
+                        <optgroup label="Afrique">
+                            <option class="text-sm" value="">Angola</option>
+                            <option class="text-sm" value="">Afrique du Sud</option>
+                            <option class="text-sm" value="">Cameroun</option>
+                            <option class="text-sm" value="">Cote d'Ivoire</option>
+                            <option class="text-sm" value="">Nigéria</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option class="text-sm" value="">Belgique</option>
+                            <option class="text-sm" value="">Russie</option>
+                        </optgroup>
+                    </select>
+                </nav>
+            </div>
+            <!-- end Nav container -->
+
+            <div class="grid grid-cols-10 mt-5">
+                <div class="col-span-10 md:col-span-5 lg:col-span-2  flex flex-col gap-2">
+                    <div class="bg-black col-span-2 p-2 rounded">
+                        <img src="./assets/icons/play-store.svg" alt="">
+                    </div>
+                    <div class="flex lg:grid md:grid-cols-2 items-center gap-x-2">
+                        <div class="bg-black p-2 rounded flex-1 h-full">
+                            <img src="./assets/icons/app-store.svg" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <img src="./assets/icons/app-gallery.svg" alt="" class="flex-1">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2 lg:justify-between items-center mt-14 text-sm">
+                <p class="flex items-center"><img src="./assets/icons/mail.svg" alt="" class="mr-2">Email de Contact :
+                    wivroo@bbraingroup.com</p>
+
+                <p class="flex items-center"><img src="./assets/icons/call.svg" alt="" class="mr-2">Service
+                    Client : +
+                    237 651 607 255
+                </p>
+
+                <p class="flex items-center"><img src="./assets/icons/position.svg" alt="" class="mr-2">Bonapriso,
+                    Douala
+                    Cameroun 542 Rue Melen Yaounde</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2 lg:justify-between items-center mt-12">
+                <p class="text-center lg:text-left">© Copyright BBrain LLC 2022. Tous droits reservés.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 lg:justify-between items-center mt-2">
+                <p class="text-center lg:text-left">Designer par <a href="#" class="font-semibold">Johan Gaby</a></p>
+
+                <p class="text-center lg:text-left">Développer par <a href="#" class="font-semibold">Junior TACHOM</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

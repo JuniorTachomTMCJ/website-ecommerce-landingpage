@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter after:fixed after:top-0 after:bottom-0 after:left-0 after:bg-[#EA7550] after:z-[1000] after:w-[50vw] before:w-[50vw] before:fixed before:top-0 before:bottom-0 before:right-0 before:bg-[#EA7550] before:z-[1000] after:transition-all before:transition after:duration-1000 before:duration-1000 after:origin-left before:origin-right transition-opacity after:text-3xl duration-1000 before:px-4;
+  }
+
+  body.loaded .loader {
+    @apply opacity-0;
+  }
+
+  body.loaded {
+    @apply after:content-[''] before:content-[''] opacity-100 after:scale-x-0 before:scale-x-0;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply p-3 text-center rounded border flex items-center justify-center bg-black border-transparent text-white transition-all duration-200 hover:tracking-widest;
+  }
+}
