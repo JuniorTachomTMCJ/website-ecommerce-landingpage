@@ -1,6 +1,6 @@
 # integration-wiroo-ecommerce
 
-Integration of a model designed by Johan [youtube tutorial](https://www.youtube.com/watch?v=KsxNsNcAWic).
+Integration of a model designed by Johan Gaby.
 
 ## Table of contents
 
@@ -11,7 +11,7 @@ Integration of a model designed by Johan [youtube tutorial](https://www.youtube.
   - [Built with](#built-with)
 - [Author](#author)
 
-### Design {design}
+### Design
 
 ![1659293618668](image/README/1659293618668.png)
 
@@ -23,9 +23,9 @@ Integration of a model designed by Johan [youtube tutorial](https://www.youtube.
 
 ### Built with
 
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- Tailwindscss
+- Vanilla JS
+- Animate css
 
 ## Author
 
