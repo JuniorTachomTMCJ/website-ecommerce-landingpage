@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
+    "build:css": "npx tailwindcss -i ./src/style.css -o ./docs/style.css --watch"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
