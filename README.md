@@ -18,8 +18,8 @@ Integration of a model designed by Johan Gaby.
 ### Links
 
 - Figma URL : [click here](https://www.figma.com/file/QOeSAcBK0uv03IjDYAp2yM/LearnUIDesign?node-id=2%3A1880)
-- Solution URL :
-- Live Site URL :
+- Solution URL : [https://github.com/JuniorTachomTMCJ/wivroo-ecommerce.git](https://github.com/JuniorTachomTMCJ/wivroo-ecommerce.git)
+- Live Site URL : [https://juniortachomtmcj.github.io/wivroo-ecommerce/](https://juniortachomtmcj.github.io/wivroo-ecommerce/)
 
 ### Built with
 
