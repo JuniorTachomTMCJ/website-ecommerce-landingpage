@@ -10,7 +10,7 @@
   }
 
   body.loaded .loader {
-    @apply opacity-0;
+    @apply opacity-0 z-[-2000];
   }
 
   body.loaded {
@@ -21,5 +21,32 @@
 @layer components {
   .btn {
     @apply p-3 text-center rounded border flex items-center justify-center bg-black border-transparent text-white transition-all duration-200 hover:tracking-widest;
+  }
+
+  .categories-items {
+    @apply px-4;
+  }
+
+  .categories-items.active {
+    cursor: grab;
+  }
+
+  .prev-btn.desactived,
+  .next-btn.desactived {
+    @apply bg-white/20 cursor-default pointer-events-none;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
