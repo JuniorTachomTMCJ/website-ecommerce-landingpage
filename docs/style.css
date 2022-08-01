@@ -792,6 +792,11 @@ select.country-dropdown option:disabled:first-child{
   position: relative;
 }
 
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .left-0{
   left: 0px;
 }

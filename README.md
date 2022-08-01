@@ -1,4 +1,4 @@
-# integration-wiroo-ecommerce
+# integration-ecommerce-website-landingpage
 
 Integration of a model designed by [Johan Gaby](https://www.behance.net/mbagnajohan).
 
@@ -13,13 +13,13 @@ Integration of a model designed by [Johan Gaby](https://www.behance.net/mbagnajo
 
 ### Design
 
-![1659293618668](image/README/1659293618668.png)
+![1659394370563](image/README/1659394370563.png)
 
 ### Links
 
 - Figma URL : [click here](https://www.figma.com/file/QOeSAcBK0uv03IjDYAp2yM/LearnUIDesign?node-id=2%3A1880)
-- Solution URL : [https://github.com/JuniorTachomTMCJ/wivroo-ecommerce.git](https://github.com/JuniorTachomTMCJ/wivroo-ecommerce.git)
-- Live Site URL : [https://juniortachomtmcj.github.io/wivroo-ecommerce/](https://juniortachomtmcj.github.io/wivroo-ecommerce/)
+- Solution URL : [https://github.com/JuniorTachomTMCJ/website-ecommerce-landingpage.git](https://github.com/JuniorTachomTMCJ/website-ecommerce-landingpage.git)
+- Live Site URL : [https://juniortachomtmcj.github.io/website-ecommerce-landingpage/](https://juniortachomtmcj.github.io/website-ecommerce-landingpage/)
 
 ### Built with
 
