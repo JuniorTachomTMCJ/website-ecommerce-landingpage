@@ -13,7 +13,7 @@ Integration of a model designed by [Johan Gaby](https://www.behance.net/mbagnajo
 
 ### Design
 
-![1659394370563](image/README/1659394370563.png)
+![1659394826124](image/README/1659394826124.png)
 
 ### Links
 
