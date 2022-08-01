@@ -844,6 +844,22 @@ select.country-dropdown option:disabled:first-child{
   top: 130px;
 }
 
+.-right-5{
+  right: -1.25rem;
+}
+
+.-right-10{
+  right: -2.5rem;
+}
+
+.-right-2\/4{
+  right: -50%;
+}
+
+.-right-24{
+  right: -6rem;
+}
+
 .z-\[2000\]{
   z-index: 2000;
 }
@@ -1701,6 +1717,10 @@ select.country-dropdown option:disabled:first-child{
 }
 
 @media (min-width: 640px){
+  .sm\:right-0{
+    right: 0px;
+  }
+
   .sm\:col-span-6{
     grid-column: span 6 / span 6;
   }
