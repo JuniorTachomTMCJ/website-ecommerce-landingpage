@@ -1,4 +1,4 @@
-# integration-wiroo-ecommerce
+# integration-wivroo-ecommerce
 
 Integration of a model designed by [Johan Gaby](https://www.behance.net/mbagnajohan).
 
