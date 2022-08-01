@@ -836,6 +836,14 @@ select.country-dropdown option:disabled:first-child{
   right: 1rem;
 }
 
+.top-\[135px\]{
+  top: 135px;
+}
+
+.top-\[130px\]{
+  top: 130px;
+}
+
 .z-\[2000\]{
   z-index: 2000;
 }
@@ -988,8 +996,24 @@ select.country-dropdown option:disabled:first-child{
   height: 25rem;
 }
 
+.h-\[calc\(100vh\+130px\)\]{
+  height: calc(100vh + 130px);
+}
+
 .max-h-\[calc\(100vh-138px\)\]{
   max-height: calc(100vh - 138px);
+}
+
+.max-h-\[calc\(100vh-135px\)\]{
+  max-height: calc(100vh - 135px);
+}
+
+.max-h-\[calc\(100vh-130px\)\]{
+  max-height: calc(100vh - 130px);
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-80{
@@ -1145,6 +1169,10 @@ select.country-dropdown option:disabled:first-child{
 
 .gap-y-8{
   row-gap: 2rem;
+}
+
+.gap-y-4{
+  row-gap: 1rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]){
@@ -1323,6 +1351,10 @@ select.country-dropdown option:disabled:first-child{
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .text-center{
