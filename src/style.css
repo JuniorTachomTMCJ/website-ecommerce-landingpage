@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,6 +31,20 @@
 
   .categories-items.active {
     cursor: grab;
+  }
+
+  select.country-dropdown:focus {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1),
+      0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+
+  select.country-dropdown option:not(:disabled) {
+    @apply hover:bg-gray-100 py-2 px-4 pl-7;
+  }
+
+  select.country-dropdown option:disabled {
+    @apply py-3 px-4 pl-16  h-11 leading-[0] text-black text-base flex font-medium bg-no-repeat bg-[24px_center] border-t border-gray-100 first:border-none;
   }
 
   .prev-btn.desactived,
